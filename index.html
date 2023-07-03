@@ -1,1 +1,968 @@
-my-website
+<!DOCKTYPE html>
+<head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css" />
+ <!--Tittle-->
+ <title>FeelmoviesK</title> 
+    <!--==Fav-icon==================-->
+    <link rel="shortcut icon" href="favicon"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--import-poppins-font-->
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--import-monoton-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!--using-Font-Awesome-->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+<!--CSS-swiper-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+
+
+
+<!--scroll-progress-bar-->
+<div id="progress">
+    <span id="progress-value"></span>
+</div>
+<!--Navigation-->
+<nav class="navigation">
+
+    <!--menu-btn-->
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+    </label>
+
+    <!--logo-->
+    <a href="index.html" class="logo">
+        DMovies<span>.hd</span>
+    </a>
+
+    <!--menu-->
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Tvshows.html">Tv Shows</a></li>
+        <li><a href="movie-page.html">Movies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+        
+<!--search-box-->
+<form action="" class="search-box">
+    <!--input-->
+    <input type="text" name="search" placeholder="Search Movie" class="search-input" required/>
+    <!--btn--> 
+    <button type="submit">
+        <i class="fas fa-search"></i>
+    </button>
+</form>
+
+</nav>
+<!--nav-end-->
+
+
+<!--slider-->
+<section id="main-slider">
+
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+        <!--1-->
+      <div class="swiper-slide">
+      <!--box-->
+    <div class="main-slider-box">
+
+        <!--overlayer-->
+        <a href="alanwalker.mp3" class="main-slider-overlay">
+            <i class="fas fa-play"></i>
+        </a>
+
+
+
+    <!--img-->
+    <div class="main-slider-img">
+        <img src="Images/shazam1.jpg" alt="poster"/>
+    </div>
+<!--text-->
+<div class="main-slider-text">
+    <!--quality-->
+    <span class="quality">Full HD</span>
+
+    <!--bottom-text-->
+    <div class="bottom-text">
+        <!--name-->
+        <div class="movie-name">
+            <span>2023</span>
+            <strong>SHAZAM: FURY OF THE GODS</strong>
+        </div>
+        
+        <!--category-and-rating-->
+        <div class="category-rating">
+            <div class="category">
+                <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+            </div>
+        <!--rating-->
+        <div class="rating">
+            5.2 <img src="Images/IMDB.svg" alt="imdb"/>
+        </div>
+    </div>
+</div>
+</div>
+
+    </div>
+      </div>
+
+
+<!--2-->
+<div class="swiper-slide">
+    <!--box-->
+  <div class="main-slider-box">
+
+      <!--overlayer-->
+      <a href="movies/Adam driver 65.mp4" class="main-slider-overlay">
+          <i class="fas fa-play"></i>
+      </a>
+
+
+
+  <!--img-->
+  <div class="main-slider-img">
+      <img src="Images/Adamposter.jpg" alt="poster"/>
+  </div>
+<!--text-->
+<div class="main-slider-text">
+  <!--quality-->
+  <span class="quality">Full HD</span>
+
+  <!--bottom-text-->
+  <div class="bottom-text">
+      <!--name-->
+      <div class="movie-name">
+          <span>2023</span>
+          <strong>Adam driver: 65</strong>
+      </div>
+      
+      <!--category-and-rating-->
+      <div class="category-rating">
+          <div class="category">
+              <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Thriller</a>
+          </div>
+      <!--rating-->
+      <div class="rating">
+          5.2 <img src="Images/IMDB.svg" alt="imdb"/>
+      </div>
+  </div>
+</div>
+</div>
+
+  </div>
+    </div>
+
+
+<!--3-->
+<div class="swiper-slide">
+    <!--box-->
+  <div class="main-slider-box">
+
+      <!--overlayer-->
+      <a href="movies/Antman.mp4" class="main-slider-overlay">
+          <i class="fas fa-play"></i>
+      </a>
+
+
+
+  <!--img-->
+  <div class="main-slider-img">
+      <img src="Images/Ant-Man_and_the_Wasp_Quantumania_poster.jpg" alt="poster"/>
+  </div>
+<!--text-->
+<div class="main-slider-text">
+  <!--quality-->
+  <span class="quality">Full HD</span>
+
+  <!--bottom-text-->
+  <div class="bottom-text">
+      <!--name-->
+      <div class="movie-name">
+          <span>2023</span>
+          <strong>Antman and the wasp: QUANTINUM</strong>
+      </div>
+      
+      <!--category-and-rating-->
+      <div class="category-rating">
+          <div class="category">
+              <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+          </div>
+      <!--rating-->
+      <div class="rating">
+          5.2 <img src="Images/IMDB.svg" alt="imdb"/>
+      </div>
+  </div>
+</div>
+</div>
+
+  </div>
+    </div>
+
+
+
+    <!--4-->
+    <div class="swiper-slide">
+        <!--box-->
+      <div class="main-slider-box">
+  
+          <!--overlayer-->
+          <a href="movies/Creed III.mp4" class="main-slider-overlay">
+              <i class="fas fa-play"></i>
+          </a>
+  
+  
+  
+      <!--img-->
+      <div class="main-slider-img">
+          <img src="Images/Creed_III_poster.png" alt="poster"/>
+      </div>
+  <!--text-->
+  <div class="main-slider-text">
+      <!--quality-->
+      <span class="quality">Full HD</span>
+  
+      <!--bottom-text-->
+      <div class="bottom-text">
+          <!--name-->
+          <div class="movie-name">
+              <span>2023</span>
+              <strong>Creed: lll</strong>
+          </div>
+          
+          <!--category-and-rating-->
+          <div class="category-rating">
+              <div class="category">
+                  <a href="#">Action</a>,<a href="#">Comedy</a>
+              </div>
+          <!--rating-->
+          <div class="rating">
+              5.2 <img src="Images/IMDB.svg" alt="imdb"/>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+      </div>
+        </div>
+
+<!--5-->
+<div class="swiper-slide">
+    <!--box-->
+  <div class="main-slider-box">
+
+      <!--overlayer-->
+      <a href="movies/Lastkingdom.mp4" class="main-slider-overlay">
+          <i class="fas fa-play"></i>
+      </a>
+
+
+
+  <!--img-->
+  <div class="main-slider-img">
+      <img src="Images/lastkingdommustdie_.jpg" alt="poster"/>
+  </div>
+<!--text-->
+<div class="main-slider-text">
+  <!--quality-->
+  <span class="quality">Full HD</span>
+
+  <!--bottom-text-->
+  <div class="bottom-text">
+      <!--name-->
+      <div class="movie-name">
+          <span>2023</span>
+          <strong>The last Kingdom: Seven kingdom must die</strong>
+      </div>
+      
+      <!--category-and-rating-->
+      <div class="category-rating">
+          <div class="Genre">
+              <a href="#">Action</a>,<a href="#">Drama</a>,<a href="#">History</a>
+          </div>
+      <!--rating-->
+      <div class="rating">
+          5.2 <img src="Images/IMDB.svg" alt="imdb"/>
+      </div>
+  </div>
+</div>
+</div>
+
+  </div>
+    </div>
+    
+<!--6-->
+<div class="swiper-slide">
+    <!--box-->
+  <div class="main-slider-box">
+
+      <!--overlayer-->
+      <a href="movies/ghosted.mp4" class="main-slider-overlay">
+          <i class="fas fa-play"></i>
+      </a>
+
+
+
+  <!--img-->
+  <div class="main-slider-img">
+      <img src="Images/ghosted.jpg" alt="poster"/>
+  </div>
+<!--text-->
+<div class="main-slider-text">
+  <!--quality-->
+  <span class="quality">Full HD</span>
+
+  <!--bottom-text-->
+  <div class="bottom-text">
+      <!--name-->
+      <div class="movie-name">
+          <span>2023</span>
+          <strong>Ghosted</strong>
+      </div>
+      
+      <!--category-and-rating-->
+      <div class="category-rating">
+          <div class="category">
+              <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+          </div>
+      <!--rating-->
+      <div class="rating">
+          5.2 <img src="Images/IMDB.svg" alt="imdb"/>
+      </div>
+  </div>
+</div>
+</div>
+
+  </div>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+   
+</section>
+<!--btns-->
+<div class="slider-btns">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<!--slider-end-->
+
+
+<!--latest-Movies-->
+<section id="latest">
+    <!--heading-->
+    <div class="latest-heading">
+    <h1>Latest Movies</h1>
+</div>
+
+<!--container-->
+<div class="post-container">
+
+    <!--post-box-1-->
+    <div class="post-box">
+        <!--img-->
+        <div class="post-img">
+        <a href="#"><img src="Images/ghosted.jpg" alt="poster"></a>
+        </div>
+
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+    <!--name-->
+    
+    <div class="movie-name">
+        <span>2023</span>
+        
+        <a href="movies/Ghosted.mp4">Watch:  Ghosted</a>
+    </div>
+    
+    <!--category-and-rating-->
+    <div class="category-rating">
+        <div class="category">
+            <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+        </div>
+        
+    <!--rating-->
+    <div class="rating">
+        5.2 <img src="IMDB.svg" alt="imdb"/>
+       
+    </div>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+
+
+<!--post-box-2-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/Ant-Man_and_the_Wasp_Quantumania_poster.jpg" alt="poster">
+    </div>
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="movies/Antman.mp4">Watch: Antman and the wasp</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--post-box-3-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/youarekillingme.jpg" alt="poster">
+    </div>
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">You are killing me</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+<!--post-box-4-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/Creed_III_poster.png" alt="poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">Creed: lll</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Comedy</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+<!--post-box-5-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/shazam1.jpg" alt="poster">
+    </div>
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="movies/Shazam 2.mp4">Watch: Shazam</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!--post-box-6-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/mudermystery.jpg" alt="poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">Muder: mystery2</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Drama</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!--post-box-7-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/Chupa.jpg" alt="poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">Chupa</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!--post-box-8-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/tetris.jpg" alt="poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">Tetris</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Drama</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!--post-box-9-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/atao_OfficialPoster.jpg" alt="Poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">A Thousand: and one</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Crime</a>,<a href="#">Drama</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!--post-box-10-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/oto.jpg" alt="poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">Aman Called: Otto</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!--post-box-11-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/teen.jpg" alt="poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">Teen: wolf</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Horror</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!--post-box-12-->
+<div class="post-box">
+    <!--img-->
+    <div class="post-img">
+    <img src="Images/avatar.jpg" alt="poster">
+    </div>
+
+<!--text-->
+<div class="main-slider-text">
+<!--quality-->
+<span class="quality">Full HD</span>
+
+<!--bottom-text-->
+<div class="bottom-text">
+
+<!--name-->
+<div class="movie-name">
+    <span>2023</span>
+    <a href="#">Avatar: The way of water</a>
+</div>
+
+<!--category-and-rating-->
+<div class="category-rating">
+    <div class="category">
+        <a href="#">Action</a>,<a href="#">Adventure</a>,<a href="#">Comedy</a>
+    </div>
+<!--rating-->
+<div class="rating">
+    5.2 <img src="IMDB.svg" alt="imdb"/>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!--container-end-->
+
+
+<!--page-number-->
+<div class="page-number">
+    <a href="movie-page1.html" class="page-active">1</a>
+    <a href="movie-page2.html">2</a>
+    <a href="movie-page3.html">3</a>
+    <a href="movie-page4.html">4</a>
+    <a href="index5.html.html" class="previous">&laquo; Previous</a>
+    <a href="movie-page.html" class="next">Next &raquo;</a>
+    <a href="movie-page100.html">100</a>
+</div>
+</section>
+<!--latest-post-end-->
+
+<!--footer-->
+
+<footer>
+    <!--footer-logo-->
+    <a href="index.html" class="logo">
+        DMovies<span>hd</span>
+    </a>
+    <!--copyright-->
+    <span class="copyright">
+        copyright 2023 - All Rights Reserved
+    </span>
+    <div class="pab8"><a href="index.html">DMovies</a> </div>
+<div class="live"><strong class="onstat"> </strong> ONLINE</div>
+</footer>
+
+<!--js-swiper-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--jQuery-->
+
+<script src="jQuery.js"></script>
+
+
+  <script>
+    /*==scroll-progress-bar=======*/
+    let scrollPecentage = () =>{
+        let scrollProgress = document.getElentById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round(pos * 100 / calcHeight);
+        scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+    }
+    window.onscroll = scrollPecentage;
+    window.onload = scrollPecentage;
+
+    
+    /*initialize swiper*/
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay:
+      {
+        display: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    /*--menu-btn-fixed-when-scroll--*/
+    $(window).scroll(function(){
+        if($(document).scrollTop() > 20){
+            $('.navigation').addClass('fix-icon');
+    }
+    else{
+        $('.navigation').removeClass('fix-icon');
+    }
+    });
+  </script>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+    </body>
+</head>
+</html>
